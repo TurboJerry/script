@@ -2125,6 +2125,7 @@ let nowTime = new Date().getTime() + new Date().getTimezoneOffset() * 60 * 1000 
     });
     return;
   }
+  cookiesArr.reverse()
   if (nowTime > new Date(activeEndTime).getTime()) {
     //活动结束后弹窗提醒
     $.msg($.name, '活动已结束', `请删除此脚本\n咱江湖再见`);
