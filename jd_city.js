@@ -49,7 +49,7 @@ let pool = []
      var scs = process.env.JD_CITY_SHARECODES
      if (scs) {
           self_define = true
-          self_code = strings.split("&")
+          self_code = scs.split("&")
           console.log(`你提供了助力码${self_code}，将只为这些助力。`)
      }
      // console.log('内部互助没奖励了吧应该. 城城现在改为优先助力池子!(作者只吃第一个CK,其余池子!) 请查看群内频道通知!,5s后开始!')
