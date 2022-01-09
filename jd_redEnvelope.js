@@ -1,11 +1,6 @@
 /*
 2022年年货节京享红包活动🧧
 0,5,20 0,20,21 * * * jd_redEnvelope.js
-量子内部返利
-全局改返利
-下面是返利链接
-https://u.jd.com/SKMR7Gw
-https://u.jd.com/SKMR7Gw
 跳转到app 可查看助力情况
 */
 
