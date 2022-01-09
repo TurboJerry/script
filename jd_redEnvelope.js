@@ -2,6 +2,7 @@
 2022年年货节京享红包活动🧧
 0,5,20 0,20,21 * * * jd_redEnvelope.js
 跳转到app 可查看助力情况
+https://u.jd.com/SKMR7Gw
 */
 
 let rebateCodes = ''
