@@ -51,6 +51,10 @@ let pool = []
           self_define = true
           self_code = scs.split("&")
           console.log(`你提供了助力码${self_code}，将只为这些助力。`)
+         
+     }
+     if(self_code.length==0){
+          console.log("未指定助力码，本脚本将不会助力，只会拆红包。")
      }
      // console.log('内部互助没奖励了吧应该. 城城现在改为优先助力池子!(作者只吃第一个CK,其余池子!) 请查看群内频道通知!,5s后开始!')
      // await $.wait(5000)
