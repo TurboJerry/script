@@ -42,7 +42,7 @@ $.shareCodesArr = [];
     $.inviteIdCodesArr = {}
     var pins = process.env.NIAN_PINS+""
     if(!pins){
-        console.log("本脚本不支持跑所有账号，因为手动开启的跑本脚本灰黑，所以需要设置环境变量以跑指定账号，参见https://t.me/kczz2021")
+        console.log("本脚本不支持跑所有账号，因为没手动开启活动就跑本脚本招黑，所以需要设置环境变量以跑指定账号，参见https://t.me/kczz2021")
     }else{
         console.log("只显示助力码，说明已经跑过脚本，或者黑了。")
     }
