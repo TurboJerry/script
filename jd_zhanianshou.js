@@ -44,7 +44,7 @@ $.shareCodesArr = [];
     if(!pins){
         console.log("本脚本不支持跑所有账号，因为没手动开启活动就跑本脚本招黑，所以需要设置环境变量以跑指定账号，参见https://t.me/kczz2021")
     }else{
-        console.log("只显示助力码，说明已经跑过脚本，或者黑了。")
+        console.log("如果只显示助力码，说明已经跑过脚本，或者黑了。")
     }
     
     for (let i = 0; i < cookiesArr.length && true; i++) {
