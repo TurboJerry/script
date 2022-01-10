@@ -40,7 +40,7 @@ $.shareCodesArr = [];
     }
 
     $.inviteIdCodesArr = {}
-    var pins = process.env.NIAN_PINS
+    var pins = process.env.NIAN_PINS+""
     for (let i = 0; i < cookiesArr.length && true; i++) {
         if (pins.indexOf(/pt_pin=([^;\s]+)/.exec(cookiesArr[i])[1]) == -1) {
             continue
