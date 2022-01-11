@@ -1,8 +1,9 @@
 /*
-   活动：京东超市年货日历
-   地址：https://xinrui-isv.isvjcloud.com/year/
-   签到满得2022京豆，脚本只做任务，签到，补签
-   PS:很多人黑号，
+活动：京东超市年货日历
+地址：https://xinrui-isv.isvjcloud.com/year/
+签到满得2022京豆，脚本只做任务，签到，补签
+PS:很多人黑号，
+cron 0 0,20 * * * jd_nhj_sign.js
 * */
 const $ = new Env("京东超市年货日历");
 $.CryptoJS = require('crypto-js');
