@@ -25,7 +25,7 @@ if ($.isNode()) {
 }
 rebateCodes = $.isNode() ? (process.env.gua_nhjRed_rebateCode ? process.env.gua_nhjRed_rebateCode : `${rebateCodes}`) : ($.getdata('gua_nhjRed_rebateCode') ? $.getdata('gua_nhjRed_rebateCode') : `${rebateCodes}`);
 
-rebatePin = $.isNode() ? (process.env.gua_nhjRed_rebatePin ? process.env.gua_nhjRed_rebatePin : `${rebatePin}`) : ($.getdata('gua_nhjRed_rebatePin') ? $.getdata('gua_nhjRed_rebatePin') : `${rebatePin}`);
+rebatePin = $.isNode() ? (process.env.gua_nhjRed_rebatePin ? process.env.gua_nhjRed_rebatePin : `${rebatePin}`)  : ($.getdata('gua_nhjRed_rebatePin') ? $.getdata('gua_nhjRed_rebatePin') : `${rebatePin}`);
 let rebatePinArr = rebatePin && rebatePin.split(',') || []
 rebateCode = rebateCodes
 message = ''
@@ -56,16 +56,16 @@ let nowTime = new Date().getTime() + new Date().getTimezoneOffset()*60*1000 + 8*
   $.again = false
   let getShare = false
   let timeH = $.time('H')
-  if(Object.getOwnPropertyNames($.shareCodeArr).length > 0 && ($.shareCodeArr["updateTime"] && $.time('d',new Date($.shareCodeArr["updateTime"] || Date.now()).getTime()) == $.time('d')) && timeH != 20 && timeH != 0){
+  if(Object.getOwnPropertyNames($.shareCodeArr).length > 0  && ($.shareCodeArr["updateTime"] && $.time('d',new Date($.shareCodeArr["updateTime"] || Date.now()).getTime()) == $.time('d')) && timeH != 20 && timeH != 0){
     $.shareCodeArr = {}
     $.shareCodeArr["flag"] = true
     getShare = true
   }
   try{
-    for (let i = 0; i < cookiesArr.length && getShare; i++) {
+    for (let i = 0; i < cookiesArr.length && getShare;  i++) {
       cookie = cookiesArr[i];
       if (cookie) {
-        $.UserName = decodeURIComponent(cookie.match(/pt_pin=([^; ]+)(?=;?)/) && cookie.match(/pt_pin=([^; ]+)(?=;?)/)[1])
+        $.UserName = decodeURIComponent( cookie.match(/pt_pin=([^; ]+)(?=;?)/) && cookie.match(/pt_pin=([^; ]+)(?=;?)/)[1])
         if(rebatePinArr.length > 0 && rebatePinArr.indexOf($.UserName) == -1) continue
         $.index = i + 1;
         await getUA()
@@ -82,7 +82,7 @@ let nowTime = new Date().getTime() + new Date().getTimezoneOffset()*60*1000 + 8*
     console.log(e)
   }
   try{
-    for (let i = 0; i < cookiesArr.length && getShare; i++) {
+    for (let i = 0; i < cookiesArr.length  && getShare; i++) {
       cookie = cookiesArr[i];
       if (cookie) {
         let n = 0
@@ -106,7 +106,7 @@ let nowTime = new Date().getTime() + new Date().getTimezoneOffset()*60*1000 + 8*
   if(Object.getOwnPropertyNames($.shareCodeArr).length > 0){
     for(let s in $.shareCodeArr || {}){
       if(s === 'flag' || s === 'updateTime') continue
-      if($.shareCodeArr[s]) shareCodeArr[s] = $.shareCodeArr[s]
+      if($.shareCodeArr[s]) shareCodeArr[s] =  $.shareCodeArr[s]
     }
   }
   
@@ -114,7 +114,7 @@ let nowTime = new Date().getTime() + new Date().getTimezoneOffset()*60*1000 + 8*
     if($.endFlag) break
     cookie = cookiesArr[i];
     if (cookie) {
-      $.UserName = decodeURIComponent(cookie.match(/pt_pin=([^; ]+)(?=;?)/) && cookie.match(/pt_pin=([^; ]+)(?=;?)/)[1])
+      $.UserName = decodeURIComponent( cookie.match(/pt_pin=([^; ]+)(?=;?)/) && cookie.match(/pt_pin=([^; ]+)(?=;?)/)[1])
       $.index = i + 1;
       if($.runArr[$.UserName]) continue
       console.log(`\n\n******开始【京东账号${$.index}】${$.nickName || $.UserName}*********\n`);
@@ -123,7 +123,7 @@ let nowTime = new Date().getTime() + new Date().getTimezoneOffset()*60*1000 + 8*
       if($.endFlag) break
     }
   }
-  if(Object.getOwnPropertyNames($.shareCodeArr).length > 0 && $.shareCodeArr["updateTime"] != pinUpdateTime) $.setdata($.shareCodeArr,'gua_JDnhjRed')
+  if(Object.getOwnPropertyNames( $.shareCodeArr).length > 0 && $.shareCodeArr["updateTime"] != pinUpdateTime) $.setdata($.shareCodeArr,'gua_JDnhjRed')
   if(message){
     $.msg($.name, ``, `${message}\nhttps://u.jd.com/SCLyQi4\n\n跳转到app 可查看助力情况`);
     if ($.isNode()){
@@ -149,7 +149,7 @@ async function run(type = 0){
         break
       }
       await getUrl1()
-      $.actId = $.url2.match(/mall\/active\/([^/]+)\/index\.html/) && $.url2.match(/mall\/active\/([^/]+)\/index\.html/)[1] || `https://prodev.m.jd.com/mall/active/2UboZe4RXkJPrpkp6SkpJJgtRmod/index.html?unionActId=31137&d=${rebateCode}`
+      $.actId = $.url2.match( /mall\/active\/([^/]+)\/index\.html/) && $.url2.match(/mall\/active\/([^/]+)\/index\.html/)[1] || `https://prodev.m.jd.com/mall/active/2UboZe4RXkJPrpkp6SkpJJgtRmod/index.html?unionActId=31137&d=${rebateCode}`
       // let arr = await getBody($.UA,$.url2)
       // await getEid(arr)
       if(!$.eid){
