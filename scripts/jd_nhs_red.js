@@ -24,7 +24,7 @@ if ($.isNode()) {
     }
     await CryptoScripts()
     $.CryptoJS = $.isNode() ? require('crypto-js') : CryptoJS;
-    for (let i = 30; i < cookiesArr.length; i++) {
+    for (let i = 0; i < cookiesArr.length; i++) {
         $.index = i + 1;
         $.cookie = cookiesArr[i];
         $.isLogin = true;
