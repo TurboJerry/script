@@ -1,5 +1,5 @@
 /*
-萌虎摇摇乐 
+萌虎摇摇乐
 cron 0 0,10,20 * * * https://raw.githubusercontent.com/star261/jd/main/scripts/jd_mhyyl.js
 * */
 const $ = new Env('萌虎摇摇乐');
