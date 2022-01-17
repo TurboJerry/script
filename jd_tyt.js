@@ -212,7 +212,6 @@ function helpCoinDozer(packetId) {
                                    console.log('已经推出：' + data.data.dismantledAmount)
                               }
                          } else if (data.success == false) {
-                              console.log(data.msg, "++++")
                               if (data.msg.indexOf("已完成砍价") != -1) {
                                    $.ok = true
                               }
