@@ -299,7 +299,7 @@ function getCoinDozerInfo() {
                     } else {
                          if (safeGet(data)) {
                               data = JSON.parse(data);
-                              if (data.success == true) {
+                              if (data.success == true && data?.data?.sponsorActivityInfo?.packetId) {
                                    console.log('叼毛：' + data.data.sponsorActivityInfo.initiatorNickname)
                                    console.log('邀请码：' + data.data.sponsorActivityInfo.packetId)
                                    console.log('推出：' + data.data.sponsorActivityInfo.dismantledAmount)
