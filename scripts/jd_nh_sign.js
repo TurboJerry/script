@@ -75,8 +75,10 @@ async function main() {
                 "encryptAssignmentId":oneInfo.encryptAssignmentId,
                 "sourceCode":"aceaceglqd20211215",
                 "completionFlag":true,
-                "ext":ext
             };
+            if(ext){
+                info['ext'] = ext
+            }
             let signInfo = await takeRequest('doInteractiveAssignment',JSON.stringify(info));
             if(signInfo && signInfo.rewardsInfo && signInfo.rewardsInfo.successRewards){
                 let allSignInfo = signInfo.rewardsInfo.successRewards;
