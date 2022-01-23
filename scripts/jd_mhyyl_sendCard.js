@@ -103,6 +103,12 @@ async function  main(ck,runType) {
     }
     if(runType === 1){
         let cardInfo = await takePost('{"apiMapping":"/api/card/list"}',ck,UA);
+        if(cardInfo && cardInfo.cardList){
+
+        }else{
+            console.log(`获取卡片列表失败`);
+            return ;
+        }
         let cardList = cardInfo.cardList;
         console.log(`\n${usName},拥有卡片情况`)
         for (let i = 0; i < cardList.length; i++) {
