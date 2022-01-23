@@ -134,6 +134,12 @@ async function  main(ck,runType) {
     if(runType === 2){
         let cardInfo = await takePost('{"apiMapping":"/api/card/list"}',ck,UA);
         let cardList = cardInfo.cardList;
+        if(cardInfo && cardInfo.cardList){
+
+        }else{
+            console.log(`获取卡片列表失败`);
+            return ;
+        }
         for (let i = 0; i < cardList.length; i++) {
             if(cardList[i].count >1){
                 let needInfo = needKardInfo[cardList[i].cardName];
@@ -168,7 +174,6 @@ async function  main(ck,runType) {
             }
         }
     }
-
 }
 async function takePost(info,ck,UA){
     let body = `appid=china-joy&functionId=collect_bliss_cards_prod&body=${info}&t=${Date.now()}&loginType=2`
