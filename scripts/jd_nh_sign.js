@@ -65,10 +65,10 @@ async function main() {
                 ext = {"exchangeNum":1};
             }
             if(oneInfo.assignmentName === '17日大奖'){
-                ext = {"exchangeNum":2};
+                ext = {"exchangeNum":1};
             }
             if(oneInfo.assignmentName === '24日大奖'){
-                ext = {"exchangeNum":3};
+                ext = {"exchangeNum":1};
             }
             let info = {
                 "encryptProjectId":"MD6S5z8gGgtP2VLJkLqmWPuDtHe",
