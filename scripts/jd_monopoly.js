@@ -1,10 +1,10 @@
 /*
     活动地址：
-        {'url':'https://lzdz1-isv.isvjcloud.com/dingzhi/customized/common/activity/9893071?activityId=cd20220108tpovk25f5b40s07t7','endTime':'1643212799000'},//2022-01-26 23:59:59
-        {'url':'https://lzdz1-isv.isvjcloud.com/dingzhi/customized/common/activity/9116786?activityId=cd2022n4ci22tlj1s2w3245u1mk','endTime':'1643126399000'},//2022-01-25 23:59:59
-        {'url':'https://lzdz1-isv.isvjcloud.com/dingzhi/customized/common/activity/8600462?activityId=cd20220107vcowv119979tm7p','endTime':'1643212799000'},//2022-01-26 23:59:59
-        {'url':'https://lzdz1-isv.isvjcloud.com/dingzhi/customized/common/activity/4517174?activityId=cd20220108iu890dmnhimj01ied','endTime':'1643299199000'},//2022-01-27 23:59:59
-        {'url':'https://lzdz1-isv.isvjcloud.com/dingzhi/customized/common/activity/8086566?activityId=cd20220105fff606x19uj4vijetkg','endTime':'1643644799000'}//2022-01-31 23:59:59
+        {'url':'https://lzdz1-isv.isvjcloud.com/dingzhi/customized/common/activity/cd20220108tpovk25f5b40s07t7?activityId=cd20220108tpovk25f5b40s07t7','endTime':'1643212799000'},//2022-01-26 23:59:59
+        {'url':'https://lzdz1-isv.isvjcloud.com/dingzhi/customized/common/activity/cd2022n4ci22tlj1s2w3245u1mk?activityId=cd2022n4ci22tlj1s2w3245u1mk','endTime':'1643126399000'},//2022-01-25 23:59:59
+        {'url':'https://lzdz1-isv.isvjcloud.com/dingzhi/customized/common/activity/cd20220107vcowv119979tm7p?activityId=cd20220107vcowv119979tm7p','endTime':'1643212799000'},//2022-01-26 23:59:59
+        {'url':'https://lzdz1-isv.isvjcloud.com/dingzhi/customized/common/activity/cd20220108iu890dmnhimj01ied?activityId=cd20220108iu890dmnhimj01ied','endTime':'1643299199000'},//2022-01-27 23:59:59
+        {'url':'https://lzdz1-isv.isvjcloud.com/dingzhi/customized/common/activity/cd20220105fff606x19uj4vijetkg?activityId=cd20220105fff606x19uj4vijetkg','endTime':'1643644799000'}//2022-01-31 23:59:59
     没有开卡，有加购，助力要开卡，脚本虽然有助力，但是因为不开卡，所以应该助力不上
     还未添加瓜分功能
     别搬了，默默偷撸
