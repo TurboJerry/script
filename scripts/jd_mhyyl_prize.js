@@ -73,6 +73,8 @@ async function  main(ck) {
         }
         await $.wait(1000)
     }
+    console.log(`获得卡片：${kapian}张`);
+    console.log(`获得京豆：${dd}个`);
 }
 
 async function takePost(info,ck,UA){
